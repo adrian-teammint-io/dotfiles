@@ -1,0 +1,4 @@
+shell-integration = fish
+theme = tokyonight
+font-family = "BlexMono Nerd Font Mono"
+background-opacity = 0.5

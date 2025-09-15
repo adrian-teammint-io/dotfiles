@@ -1,0 +1,8 @@
+# Development workflow
+lalt + shift - 1 : osascript -e 'tell application "Ghostty" to activate' -e 'delay 0.2' -e 'tell application "System Events" to keystroke "c" using control down' -e 'delay 0.5' -e 'tell application "System Events" to keystroke "npm run dev"' -e 'tell application "System Events" to key code 36'
+
+# AI Assistant
+lalt + shift - 2 : open https://claude.ai/new
+
+# Note-taking
+lalt + shift - 3 : open "/Applications/Obsidian.app"

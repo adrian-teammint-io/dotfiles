@@ -1,0 +1,38 @@
+# custom-shader = ./shaders/inside-the-matrix.glsl
+# custom-shader = ./shaders/water.glsl
+# custom-shader = ./shaders/bloom.glsl
+# custom-shader = ./shaders/tft.glsl
+# custom-shader = ./shaders/glitchy.glsl
+custom-shader-animation = always
+
+theme = catppuccin-mocha
+
+shell-integration = fish
+shell-integration-features = no-cursor
+
+cursor-style-blink = false
+cursor-style = block
+
+clipboard-trim-trailing-spaces = true
+
+
+font-family = "BlexMono Nerd Font Mono"
+font-thicken = true
+font-size = 15
+
+background-opacity = 1
+
+link-url = true
+
+window-theme = ghostty
+window-inherit-working-directory = true
+window-inherit-font-size = true
+
+mouse-hide-while-typing = true
+
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = FFFFFF
+macos-icon-screen-color = 000000
+macos-titlebar-proxy-icon = hidden
+
