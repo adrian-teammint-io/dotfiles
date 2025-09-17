@@ -1,13 +1,21 @@
+oh-my-posh init fish --config ~/.config/oh-my-posh/themes/star.omp.json | source
+
 if status is-interactive
     clear
     # Commands to run in interactive sessions can go here
 end
 
-abbr --add gc git commit
+abbr --add ga git add . abbr --add gc git commit
 abbr --add gps git push
 abbr --add gpl git pull
 abbr --add v nvim
 abbr --add x exit
+
+abbr --add config_fish nvim /Users/adrian-phan.team-mint.io/.config/fish/config.fish
+abbr --add config_ghostty nvim /Users/adrian-phan.team-mint.io/.config/ghostty/config
+abbr --add config_yazi nvim /Users/adrian-phan.team-mint.io/.config/yazi/
+
+export EDITOR=nvim
 
 function fish_greeting
     echo " "
@@ -19,10 +27,19 @@ end
 
 zoxide init fish | source
 fzf --fish | source
-oh-my-posh init fish --config ~/.config/oh-my-posh/themes/ys.omp.json | source
 string match -q "$TERM_PROGRAM" kiro and . (kiro --locate-shell-integration-path fish)
 
 # ------------------------------------------------------------
+
+# Yazi
+function y
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+end
 
 # Generate password by argon2
 function argon2_genpass
@@ -55,8 +72,8 @@ function omp_random_theme
     # Build the new init line
     set -l new_line "oh-my-posh init fish --config ~/.config/oh-my-posh/themes/$picked | source"
 
-    # Overwrite line 120 in-place using ed (robust to slashes)
-    printf '%s\n' '120c' "$new_line" '.' 'wq' | ed -s $config_file
+    # Overwrite line 1 in-place using ed (robust to slashes)
+    printf '%s\n' 1c "$new_line" '.' wq | ed -s $config_file
 
     oh-my-posh init fish --config ~/.config/oh-my-posh/themes/$picked | source
 

@@ -1,0 +1,34 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "109b13d"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "109b13d"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "109b13d"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "28e1977"
+hash = "9dbbb64ea20f9f1271c31951dea55c7b"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "8343340"
+hash = "e2336631865c0f90276dcbc553d532fc"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-moon"
+rev = "aa2d937"
+hash = "97cd4819252cb1a9d0f55daa14e481e"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-macchiato"
+rev = "4296a38"
+hash = "1e2cc3f0f96197f3dac9591be50bb2af"

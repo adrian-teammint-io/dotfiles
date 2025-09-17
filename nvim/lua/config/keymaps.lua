@@ -3,4 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>")
 vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<cr>")
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })

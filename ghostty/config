@@ -5,7 +5,7 @@
 # custom-shader = ./shaders/glitchy.glsl
 custom-shader-animation = always
 
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 
 shell-integration = fish
 shell-integration-features = no-cursor
@@ -27,11 +27,13 @@ link-url = true
 window-theme = ghostty
 window-inherit-working-directory = true
 window-inherit-font-size = true
+window-padding-x = 20
+window-padding-y = 10
 
 mouse-hide-while-typing = true
 
 macos-icon = custom-style
-macos-icon-frame = plastic
+macos-icon-frame = beige
 macos-icon-ghost-color = FFFFFF
 macos-icon-screen-color = 000000
 macos-titlebar-proxy-icon = hidden
