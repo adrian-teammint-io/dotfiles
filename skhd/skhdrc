@@ -5,4 +5,6 @@ lalt + shift - 1 : osascript -e 'tell application "Ghostty" to activate' -e 'del
 lalt + shift - 2 : open https://claude.ai/new
 
 # Note-taking
-lalt + shift - 3 : open "/Applications/Obsidian.app"
+# lalt + shift - 3 : open "/Applications/Obsidian.app"
+lalt + shift - 3 : open http:localhost:3000
+
